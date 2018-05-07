@@ -1,5 +1,7 @@
 Output from `maya.api.OpenMaya.MConditionEvent.getConditionNames()`, as of Maya 2015
 
+- [Reference](http://help.autodesk.com/cloudhelp/2015/ENU/Maya-SDK/py_ref/class_open_maya_1_1_m_condition_message.html)
+
 ```bash
 newing
 playingBack
