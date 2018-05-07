@@ -1,4 +1,4 @@
-All event names from `maya.api.OpenMaya.EventMessage`, as of Maya 2015.
+Output from `maya.api.OpenMaya.MEventMessage.getEventNames()`, as of Maya 2015
 
 ```bash
 linearUnitChanged
