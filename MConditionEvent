@@ -1,4 +1,4 @@
-Output from `maya.api.OpenMaya.MConditionEvent.getEventNames()`, as of Maya 2015
+Output from `maya.api.OpenMaya.MConditionEvent.getConditionNames()`, as of Maya 2015
 
 ```bash
 newing
