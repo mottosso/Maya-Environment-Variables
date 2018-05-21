@@ -69,5 +69,7 @@ All available (but undocumented) environment variables in Autodesk Maya
 | `VRAY_FOR_MAYA_LOG_FILE_NAME`                 |                                                      | 2014  |      | [Domemaster3D][]
 | `MI_MAYA_SOCKETS`                             |                                                      | 2014  |      | [Domemaster3D][]
 | `MI_MAYA_BATCH_OPTIONS`                       |                                                      | 2014  |      | [Domemaster3D][]
+| `MAYA_RETAIN_PYTHON_GIL`                      | ?                                                    | 2017  |      | [ATC1][]
 
 [Domemaster3D]: https://raw.githubusercontent.com/zicher3d-org/domemaster-stereo-shader/master/Domemaster3D%20Installer/installer%20files/Domemaster3D/maya/common/scripts/domeDiagnostics.mel
+[ATC1]: http://around-the-corner.typepad.com/adn/2016/07/avoid-dg-evaluation-caused-by-mayacmds-when-there-are-python-custom-nodes-in-the-scene-in-parallel-mode.html
