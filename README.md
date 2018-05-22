@@ -1,5 +1,7 @@
 All available (but undocumented) environment variables in Autodesk Maya
 
+- EDIT: Many documented variables [here](http://help.autodesk.com/view/MAYAUL/2018/ENU/?guid=GUID-FC154DF1-CC21-4DBF-9FAC-19FDE6DCBC9A).
+
 | Variable                                      | Description                                          | Since | To   | Source
 |:----------------------------------------------|:-----------------------------------------------------|:------|:-----|:------------
 | `MAYA_IGNORE_DIALOGS`                         | Suppress warnings on scene open                      | 2015  |      | 
