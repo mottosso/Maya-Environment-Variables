@@ -5,6 +5,7 @@ These represent a bulk of the Maya Preferences that are stored persistently to d
 ```py
 # Example, is Maya playing every frame or at "real-time", skipping frames?
 play_every_frame = cmds.optionVar(query="timeSliderPlaySpeed") == 0.0
+opengl_legacy = cmds.optionVar(query="vp2RenderingEngine") == "OpenGL"
 ```
 
 | Variable                                                                     | Description
