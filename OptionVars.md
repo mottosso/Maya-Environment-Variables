@@ -1,4 +1,4 @@
-Result from `cmds.optionVar(list=True)` from Maya 2020 on Windows 10, a total of 2,400 variables.
+Result from `cmds.optionVar(list=True)` from Maya 2022.1 on Windows 10, a total of 2,400 variables.
 
 These represent a bulk of the Maya Preferences that are stored persistently to disk, they are the options in native UIs including the Maya Preferences UI itself.
 
@@ -6,6 +6,26 @@ These represent a bulk of the Maya Preferences that are stored persistently to d
 # Example, is Maya playing every frame or at "real-time", skipping frames?
 play_every_frame = cmds.optionVar(query="timeSliderPlaySpeed") == 0.0
 opengl_legacy = cmds.optionVar(query="vp2RenderingEngine") == "OpenGL"
+```
+
+- Find 2020.2 variables [here](https://github.com/mottosso/Maya-Environment-Variables/commit/fdcb21136371797070452e46764d59d77f4618c2#diff-8e49ce7c6e63b66b226d860ac7f98c0c86fe157b014062138aafd88c8373cf39)
+
+To regenerate the below listing, use this.
+
+```py
+out = """\
+| Variable | Description
+|:---------|:--------------
+"""
+
+line = "| `%s` | "
+lines = []
+
+for var in cmds.optionVar(list=True):
+    lines += [line % var]
+
+with open(r"c:\tmp\color.txt", "w") as f:
+    f.write(out + "\n".join(lines))
 ```
 
 | Variable | Description
