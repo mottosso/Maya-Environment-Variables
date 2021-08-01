@@ -9,7 +9,8 @@ opengl_legacy = cmds.optionVar(query="vp2RenderingEngine") == "OpenGL"
 ```
 
 | Variable | Description
-|:---------|:--------------| `AEShowNotes` | 
+|:---------|:--------------
+| `AEShowNotes` | 
 | `AEpopupWhenCreatingShaders` | 
 | `Adobe(R) Illustrator(R)Options` | 
 | `AlembicOptions` | 
