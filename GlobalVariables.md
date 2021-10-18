@@ -6,11 +6,12 @@ These are scattered throughout the interwebs with no one spot to find them all. 
 
 ```py
 from maya import mel
+from maya import OpenMayaUI as omui
 from PySide2 import QtWidgets
 import shiboken2
 
 mel_timeline = mel.eval("$tmpVar=$gPlayBackSlider")
-ptr_timeline = MQtUtil.findControl(mel_timeline)
+ptr_timeline = omui.MQtUtil.findControl(mel_timeline)
 qt_timeline = shiboken2.wrapInstance(long(ptr_timeline), QtWidgets.QWidget)  # Exclude long() for Python 3
 qt_timeline.parent().parent().setStyleSheet("border: 5px solid red;")
 ```
