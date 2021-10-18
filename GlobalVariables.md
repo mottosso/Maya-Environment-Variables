@@ -12,13 +12,13 @@ import shiboken2
 
 try:
     # Python 2
-    long
+    int_ = long
 except NameError:
-    long = int
+    int_ = int
 
 mel_timeline = mel.eval("$tmpVar=$gPlayBackSlider")
 ptr_timeline = omui.MQtUtil.findControl(mel_timeline)
-qt_timeline = shiboken2.wrapInstance(long(ptr_timeline), QtWidgets.QWidget)
+qt_timeline = shiboken2.wrapInstance(int_(ptr_timeline), QtWidgets.QWidget)
 qt_timeline.parent().parent().setStyleSheet("border: 5px solid red;")
 ```
 
