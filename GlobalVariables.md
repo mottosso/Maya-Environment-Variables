@@ -10,9 +10,15 @@ from maya import OpenMayaUI as omui
 from PySide2 import QtWidgets
 import shiboken2
 
+try:
+    # Python 2
+    long
+except NameError:
+    long = int
+
 mel_timeline = mel.eval("$tmpVar=$gPlayBackSlider")
 ptr_timeline = omui.MQtUtil.findControl(mel_timeline)
-qt_timeline = shiboken2.wrapInstance(long(ptr_timeline), QtWidgets.QWidget)  # Exclude long() for Python 3
+qt_timeline = shiboken2.wrapInstance(long(ptr_timeline), QtWidgets.QWidget)
 qt_timeline.parent().parent().setStyleSheet("border: 5px solid red;")
 ```
 
