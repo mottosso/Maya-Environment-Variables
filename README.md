@@ -78,6 +78,7 @@ All available (but undocumented) environment variables in Autodesk Maya
 | `MAYA_ENABLE_LEGACY_VIEWPORT`                 | Enable Viewport 1.0                                  | 2018  |      | [RV1][]
 | `MAYA_ENABLE_WEBENGINE`                       |                                                      | 2018.1|      | [#2][]  
 | `MAYA_RENDER_SETUP_GLOBAL_PRESETS_PATH`       |                                                      | 2017  |      | [#1][] 
+| `XBMLANGPATH`                                 | Specifies the location of icon files                 | 3.0?  |      | [Maya documentation](https://help.autodesk.com/view/MAYAUL/2026/ENU/?guid=GUID-228CCA33-4AFE-4380-8C3D-18D23F7EAC72#GUID-228CCA33-4AFE-4380-8C3D-18D23F7EAC72__WS1A9193826455F5FF-4855151011E4FD543C6-351D)
 
 [#1]: https://github.com/mottosso/Maya-Environment-Variables/issues/1
 [#2]: https://github.com/mottosso/Maya-Environment-Variables/issues/2
